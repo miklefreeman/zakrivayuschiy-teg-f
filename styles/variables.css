@@ -1,1 +1,45 @@
 /* В этом файле будут храниться все значения переменных в исходном состоянии, а так же их изменения в зависимости от ширины устройства */
+:root {
+  --font-inter: 'Inter';
+  --font-press-start: 'PressStart2P';
+  --font-weight-normal: 400;
+  --font-weight-bold: 700;
+  --color-accent: #000;
+  --color-bg: #fff;
+  --width-clamp: clamp(100%, 80vw, 700px);
+  --bg-gradient: repeating-linear-gradient(
+      #d3d3d3 0px,
+      #d3d3d3 2px,
+      transparent 2px,
+      transparent 4px
+    ),
+    repeating-linear-gradient(
+      to right,
+      #d3d3d3 0px,
+      #d3d3d3 2px,
+      transparent 2px,
+      transparent 4px
+    ),
+    repeating-linear-gradient(
+      to bottom,
+      #e7e7e7 0%,
+      #e7e7e7 0.01%,
+      #1a1a1a 100%
+    );
+  /*<---Card-styles------>*/
+
+  --size-card-text-title: 18px;
+  --size-card-text-description: 18px;
+  --size-card-text-button: 14px;
+  --size-card-text-label: 14px;
+  --card-shadow-color: #fff;
+
+  /*<---Modal-styles------>*/
+  --font-modal-size: 14px;
+
+  /*<----Svg-s----------->*/
+  --svg-contour-color: #000;
+  --svg-core-color: #000;
+  --animation-fill-color: transparent;
+  --contour-color: #ff0000;
+}
