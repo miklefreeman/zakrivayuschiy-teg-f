@@ -332,7 +332,7 @@
 
 .like-icon.is-liked .heart {
   transform-origin: center;
-  animation: scale 0.1s 0.3s ease-in;
+  animation: scale 0.1s 0.1s ease-in;
 }
 
 /*<---------------------------------.save-on-disk---------------------------->*/
