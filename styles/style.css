@@ -39,8 +39,8 @@
   background-color: var(--color-bg);
   outline: none;
   border: 2px solid var(--color-accent);
-  font-family: var(--font-press-start), sans-serif;
-  font-weight: var(--font-weight-noraml);
+  font-family: var(--font-heading), sans-serif;
+  font-weight: var(--font-weight-normal);
   font-size: var(--size-card-text-button);
   transition: box-shadow 0.3s ease, scale 0.5s ease-in-out;
   z-index: 1;
@@ -82,7 +82,7 @@
   z-index: -1;
   min-inline-size: 375px;
   max-inline-size: 700px;
-  font-family: var(--font-inter), sans-serif;
+  font-family: var(--font-body), sans-serif;
   font-variation-settings: 'wght' var(--font-weight-normal);
   min-block-size: 100dvb;
   margin: 0 auto;
@@ -100,7 +100,7 @@
   padding: 120px 14px;
   flex-direction: column;
   gap: 20px;
-  font-family: var(--font-press-start), sans-serif;
+  font-family: var(--font-heading), sans-serif;
   text-align: center;
   border: 2px solid var(--color-accent);
   background-color: var(--color-bg);
@@ -186,8 +186,8 @@
   position: absolute;
   top: 20px;
   right: 11px;
-  font-family: var(--font-press-start), sans-serif;
-  font-weight: var(--font-weight-noraml);
+  font-family: var(--font-heading), sans-serif;
+  font-weight: var(--font-weight-normal);
   font-size: var(--size-card-text-label);
   opacity: 0.5;
   text-shadow: -1px -1px 0 var(--card-shadow-color),
@@ -372,13 +372,6 @@
   }
 }
 
-.save-on-disk__floppy-icon:focus {
-  outline: none;
-}
-
-.save-on-disk__floppy-icon:focus-visible {
-  outline: 2px solid var(--color-accent);
-}
 
 /*<------------------.modal-window-------------------------------------------------->*/
 
@@ -412,8 +405,8 @@
   line-height: 150%;
   text-transform: uppercase;
   font-size: var(--font-modal-size);
-  font-family: var(--font-press-start), sans-serif;
-  font-weight: var(--font-weight-noraml);
+  font-family: var(--font-heading), sans-serif;
+  font-weight: var(--font-weight-normal);
 }
 
 .button-modal {
