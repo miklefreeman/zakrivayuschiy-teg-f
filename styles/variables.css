@@ -26,7 +26,7 @@
       #e7e7e7 0.01%,
       #1a1a1a 100%
     );
-  /*<---Card-styles------>*/
+  /*<-----------------------------сard-styles----------------------------->*/
 
   --size-card-text-title: 18px;
   --size-card-text-description: 18px;
@@ -34,10 +34,10 @@
   --size-card-text-label: 14px;
   --card-shadow-color: #fff;
 
-  /*<---Modal-styles------>*/
+  /*<------------------------мodal-styles--------------------------------->*/
   --font-modal-size: 14px;
 
-  /*<----Svg-s----------->*/
+  /*<-----------------------------svg-styles------------------------------->*/
   --svg-contour-color: #000;
   --svg-core-color: #000;
   --animation-fill-color: transparent;
