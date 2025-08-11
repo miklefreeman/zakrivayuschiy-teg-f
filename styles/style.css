@@ -1,3 +1,15 @@
+/* Здесь вы напишете основную часть стилей страницы.
+Будьте внимательны! Для корректной работы скриптов на этом сайте нужно, чтобы в HTML некоторые классы были названы особым образом:
+✦ like-icon — для svg-иконки анимированного сердца
+✦ card__like-button — для кнопки Like рядом с иконкой
+✦ card__icon-button — для кнопки, оборачивающей иконку
+✦ card__icon-button — для кнопки, оборачивающей иконку
+✦ is-liked — для обозначения состояния лайкнутой иконки в виде сердца
+✦ button__text — для обозначения текстового элемента внутри кнопки
+*/
+
+/*<-----------------------------Filter----------------------------->*/
+
 .card-filter__contrast {
   filter: contrast(200%);
 }
@@ -29,6 +41,8 @@
 .card-filter__invert-and-blur {
   filter: invert(0.7) blur(0.2em);
 }
+
+/*<-----------------------------Other-class----------------------------->*/
 
 .clamp-witdh {
   width: var(--width-clamp);
@@ -69,7 +83,7 @@
   box-shadow: 2px 2px 0 var(--color-accent);
 }
 
-.button > span {
+.button>span {
   --color-accent: #fff;
   position: relative;
   z-index: 1;
@@ -77,12 +91,14 @@
   mix-blend-mode: difference;
 }
 
+/*<-----------------------------.page----------------------------->*/
+
 .page {
   position: relative;
   z-index: -1;
   min-inline-size: 375px;
   max-inline-size: 700px;
-  font-family: var(--font-body), sans-serif;
+  font-family: var(--main-font), sans-serif;
   font-variation-settings: 'wght' var(--font-weight-normal);
   min-block-size: 100dvb;
   margin: 0 auto;
@@ -106,6 +122,12 @@
   background-color: var(--color-bg);
 }
 
+@media (min-width: 1440px) {
+  .header__logo {
+    padding: 128px 120.5px;
+  }
+}
+
 .header__link {
   text-decoration: none;
 }
@@ -119,14 +141,6 @@
   text-transform: uppercase;
 }
 
-/*-------------@media--------------------------------------------------*/
-
-@media (min-width: 1440px) {
-  .header__logo {
-    padding: 128px 120.5px;
-  }
-}
-
 
 /*<-----------------------------.main------------------------------>*/
 
@@ -138,7 +152,7 @@
 
 @media (min-width: 1440px) {
   .main {
-    gap: 49px;
+    gap: 55px;
   }
 }
 
@@ -202,10 +216,7 @@
   }
 }
 
-@supports (
-  (-webkit-text-stroke: 0.03em var(--card-shadow-color)) or
-    (text-stroke: 0.03em var(--card-shadow-color))
-) {
+@supports ((-webkit-text-stroke: 0.03em var(--card-shadow-color)) or (text-stroke: 0.03em var(--card-shadow-color))) {
   .card__label {
     text-shadow: none;
     -webkit-text-stroke: 0.03em var(--card-shadow-color);
@@ -223,22 +234,23 @@
 
 @media (min-width: 1440px) {
   .card__footer {
-    padding: 27px 25px 25px 25px;
-    gap: 23px;
+    padding: 21px 25px 25px 25px;
+    gap: 22px;
   }
 }
 
 .card__description {
   flex-direction: column;
   display: flex;
-  gap: 25px;
+  gap: 23px;
   line-height: 21px;
   font-size: var(--size-card-text-description);
 }
 
 @media (min-width: 1440px) {
   .card__description {
-    gap: 27px;
+    gap: 26px;
+    padding-left: 1px;
   }
 }
 
